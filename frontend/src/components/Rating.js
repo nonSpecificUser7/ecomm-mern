@@ -13,10 +13,11 @@ const Rating = ({ value, text }) => {
     )
 }
 
-const Star = ({ value, number }) => {
+
+const Star = ({ value, number, color = '#FF9529' }) => {
     return (
         <span>
-            <i className={
+            <i style={{ color }} className={
                 value >= number
                     ? 'fas fa-star'
                     : value >= (number - 0.5)
