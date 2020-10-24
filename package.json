@@ -1,0 +1,22 @@
+{
+  "name": "mern-shop",
+  "version": "1.0.0",
+  "description": "e-commerce implementation of MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonSpecificUser7/mern-ec.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nonSpecificUser7/mern-ec/issues"
+  },
+  "homepage": "https://github.com/nonSpecificUser7/mern-ec#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
