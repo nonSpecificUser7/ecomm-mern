@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: '1',
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/airpods.jpg',
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'iPhone 11 Pro 256GB Memory',
     image: '/images/phone.jpg',
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'GEFORCE RTX 3080 FE',
     image: '/images/rtx_3080.jpg',
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 1,
   },
   {
-    _id: '4',
     name: 'Sony Playstation 4 Pro White Version',
     image: '/images/playstation.jpg',
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: '5',
     name: 'Logitech G-Series Gaming Mouse',
     image: '/images/mouse.jpg',
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: '6',
     name: 'GEFORCE RTX 3080 MSI',
     image: '/images/rtx_3080msi.jpg',
     description:
@@ -78,7 +72,6 @@ const products = [
     numReviews: 2,
   },
   {
-    _id: '7',
     name: 'Razer Blackwidow Mechanical Keyboard',
     image: '/images/razer_blackwidow.jpg',
     description:
@@ -91,7 +84,6 @@ const products = [
     numReviews: 14,
   },
   {
-    _id: '8',
     name: 'Logitech G502 Hero Gaming Mouse',
     image: '/images/logitech_G502_Hero.jpg',
     description:
