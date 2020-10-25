@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap'
 import Message from '../components/Message'
-import { addToCart, } from '../actions/cartActions'
+import { addToCart, removeFromCart } from '../actions/cartActions'
 
 const CartScreen = ({ match, location, history }) => {
     const productId = match.params.id
@@ -22,7 +22,7 @@ const CartScreen = ({ match, location, history }) => {
     }, [dispatch, productId, quantity])
 
     const removeFromCartHandler = (id) => {
-        console.log('Removed');
+        dispatch(removeFromCart(id));
     }
 
     const checkoutHandler = () => {
@@ -32,7 +32,7 @@ const CartScreen = ({ match, location, history }) => {
     return (
         <Row>
             <Col md={8}>
-                <h1>Shopping Cart</h1>
+                <h1>SHOPPING CART</h1>
                 {cartItems.length === 0 ? (
                     <Message>
                         Your cart is empty <Link to='/'>Go Back</Link>
@@ -86,8 +86,8 @@ const CartScreen = ({ match, location, history }) => {
                     <ListGroup variant='flush'>
                         <ListGroup.Item>
                             <h2>
-                                Subtotal ({cartItems.reduce((acc, item) => acc + item.quantity, 0)})
-                  items
+                                SUBTOTAL ({cartItems.reduce((acc, item) => acc + item.quantity, 0)})
+                  ITEMS
                 </h2>
                 $
                 {cartItems
@@ -101,7 +101,7 @@ const CartScreen = ({ match, location, history }) => {
                                 disabled={cartItems.length === 0}
                                 onClick={checkoutHandler}
                             >
-                                Proceed To Checkout
+                                PROCEED TO CHECKOUT
                 </Button>
                         </ListGroup.Item>
                     </ListGroup>

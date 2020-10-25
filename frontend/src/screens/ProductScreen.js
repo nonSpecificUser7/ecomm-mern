@@ -98,7 +98,7 @@ const ProductScreen = ({ history, match }) => {
                                     type='button'
                                     disabled={product.countInStock === 0}
                                 >
-                                    Add To Cart
+                                    ADD TO CART
                             </Button>
                             </ListGroup.Item>
                         </ListGroup>
