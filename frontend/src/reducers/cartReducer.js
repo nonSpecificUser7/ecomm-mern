@@ -1,6 +1,7 @@
 import {
     CART_ADD_PRODUCT,
     CART_REMOVE_PRODUCT,
+    CART_SAVE_PAYMENT_METHOD,
     CART_SAVE_SHIPPING_ADDRESS,
 } from '../constants/cartConstants'
 
@@ -30,7 +31,11 @@ export const cartReducer = (state = { cartItems: [], shippingAddress: {} }, acti
                 ...state,
                 cartItems: state.cartItems.filter(v => v.product !== action.payload)
             }
-
+        case CART_SAVE_PAYMENT_METHOD:
+            return {
+                ...state,
+                paymentMethod: action.payload,
+            }
         case CART_SAVE_SHIPPING_ADDRESS:
             return {
                 ...state,
@@ -40,3 +45,4 @@ export const cartReducer = (state = { cartItems: [], shippingAddress: {} }, acti
             return state
     }
 }
+
