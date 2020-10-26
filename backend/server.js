@@ -7,12 +7,17 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.js'
 import orderRoutes from './routes/orderRoutes.js'
 import path from 'path'
 import uploadRoutes from './routes/uploadRoutes.js'
+import morgan from 'morgan'
 
 dotenv.config()
 
-connectDB();
+connectDB()
 
-const app = express();
+const app = express()
+
+if (process.env.NODE_ENV === 'development') {
+    app.use(morgan('dev'))
+}
 
 app.use(express.json())
 
